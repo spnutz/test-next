@@ -1,4 +1,5 @@
 import { addTodo } from "@/app/actions";
+import { SubmitButton } from "./SubmitButton";
 
 export function AddTodoForm() {
   return (
@@ -10,12 +11,7 @@ export function AddTodoForm() {
         className="flex-grow p-2 border rounded"
         required
       />
-      <button
-        type="submit"
-        className="px-4 py-2 font-bold text-white bg-blue-500 rounded hover:bg-blue-700"
-      >
-        Add
-      </button>
+      <SubmitButton />
     </form>
   );
 }
